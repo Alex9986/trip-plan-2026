@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>十一旅行计划书 · 请领导审批</title>
+<title>十一旅行计划书 · 沈阳 × 大连</title>
 <style>
   :root {
     --bg: #faf8f5;
@@ -20,6 +20,10 @@
     --green-light: #f7faf3;
     --amber: #ef9f27;
     --amber-light: #fefaf2;
+    --purple: #b49ad8;
+    --purple-light: #f7f4fc;
+    --teal: #5ec2c2;
+    --teal-light: #f2fbfa;
     --radius: 14px;
   }
   * { margin: 0; padding: 0; box-sizing: border-box; }
@@ -42,17 +46,6 @@
   .cover .sticker { font-size: 64px; margin-bottom: 12px; }
   .cover h1 { font-size: 26px; font-weight: 700; color: #c44a62; margin-bottom: 6px; }
   .cover .subtitle { font-size: 15px; color: var(--muted); margin-bottom: 4px; }
-  .cover .approval { 
-    display: inline-block; 
-    margin-top: 16px; 
-    padding: 10px 28px; 
-    background: #f0a5b3; 
-    color: #fff; 
-    border-radius: 24px; 
-    font-size: 14px; 
-    font-weight: 600;
-    letter-spacing: 1px;
-  }
 
   .day-card {
     background: var(--card);
@@ -67,11 +60,14 @@
   .day-card.blue { border-left-color: var(--blue); }
   .day-card.green { border-left-color: var(--green); }
   .day-card.amber { border-left-color: var(--amber); }
+  .day-card.purple { border-left-color: var(--purple); }
+  .day-card.teal { border-left-color: var(--teal); }
 
   .day-header {
     display: flex;
     align-items: center;
-    gap: 10px;
+    flex-wrap: wrap;
+    gap: 8px 10px;
     margin-bottom: 14px;
   }
   .day-label {
@@ -86,9 +82,11 @@
   .day-label.blue { background: var(--blue); }
   .day-label.green { background: var(--green); }
   .day-label.amber { background: var(--amber); }
+  .day-label.purple { background: var(--purple); }
+  .day-label.teal { background: var(--teal); }
 
   .day-date { font-size: 13px; color: var(--muted); font-weight: 500; }
-  .day-highlight { font-size: 15px; font-weight: 600; }
+  .day-highlight { font-size: 14px; font-weight: 600; }
 
   .timeline { list-style: none; }
   .timeline li {
@@ -112,12 +110,22 @@
   .timeline.blue li::before { background: var(--blue); }
   .timeline.green li::before { background: var(--green); }
   .timeline.amber li::before { background: var(--amber); }
+  .timeline.purple li::before { background: var(--purple); }
+  .timeline.teal li::before { background: var(--teal); }
+
+  .timeline li .tag {
+    display: inline-block;
+    font-size: 12px;
+    font-weight: 600;
+    color: var(--muted);
+    margin-right: 4px;
+  }
 
   .tip-box {
     background: var(--amber-light);
     border-radius: var(--radius);
-    padding: 20px 24px;
-    margin: 20px 0;
+    padding: 16px 20px;
+    margin: 16px 0;
     font-size: 13px;
   }
   .tip-box strong { color: #ba7517; }
@@ -174,27 +182,33 @@
 <div class="container">
 
 <div class="cover">
-  <div class="sticker">&#x1F48C;</div>
+  <div class="sticker">&#x1F341;</div>
   <h1>十一旅行计划书</h1>
-  <p class="subtitle">沈阳 x 大连 双城记</p>
-  <p class="subtitle">小尚 &times; 小王</p>
-  <p class="subtitle" style="font-size:13px;margin-top:6px;">2026.9.30 / 10.1 &mdash; 10.6</p>
-  <div class="approval">&#x1F449; 请领导审批 &#x1F448;</div>
+  <p class="subtitle">沈阳 &#215; 大连 · 双城七日</p>
+  <p class="subtitle">小尚 &#215; 小王</p>
+  <p class="subtitle" style="font-size:13px;margin-top:6px;">2026.10.1 &mdash; 10.7</p>
 </div>
 
-<!-- 核心策略 -->
-<div class="day-card pink">
+<!-- 出发前先看 -->
+<div class="section-title">&#x1F4CB; 出发前先看</div>
+
+<div class="day-card blue">
   <div class="day-header">
-    <span class="day-label pink">策略</span>
-    <span class="day-highlight">怎么避开人山人海？</span>
+    <span class="day-label blue">景点</span>
+    <span class="day-highlight">这几件事提前办</span>
   </div>
-  <p style="font-size:14px;color:var(--muted);margin-top:4px;">
-    &#x1F4A1; <strong>沈阳先吃、大连后浪</strong> &mdash; 沈阳的核心是美食（鸡架&#x1F414;、烤肉&#x1F969;、夜市&#x1F31C;），满城都是吃的，不受景区容量限制！大连 10.1-3 是最高峰（酒店满房率 95%+），但<strong>10.4 开始人潮回落</strong>。所以我们先在沈阳吃两天，等大连安静了再去海边&#x1F30A;，完美避开人流峰值！
-  </p>
+  <ul class="timeline blue">
+    <li><strong>沈阳故宫</strong> &mdash; 十一正常开放，提前 5 天在「沈阳故宫博物院」公众号买票。10.1-3 特别抢手，准点抢。往年十一会提前半小时开馆、延后半小时闭馆。</li>
+    <li><strong>7212 文创园</strong> &mdash; 预计 9 月底开放，十一正好赶上，可能是新打卡点，出发前再确认下。</li>
+    <li><strong>辽宁省博物馆、九一八历史博物馆</strong> &mdash; 免费但要提前预约，十一人多，也提前约。</li>
+  </ul>
 </div>
 
-<!-- 双人汇合 -->
-<div class="section-title">&#x1F4CD; 第一步：双向奔赴</div>
+<div class="tip-box">
+  <p><strong>&#x1F9E5; 十月穿搭</strong> &mdash; 沈阳均温 5-16&deg;C，大连比沈阳暖 1-3&deg;C。风衣或薄羽绒 + 卫衣 + 长袖，下身秋裤 + 单裤，海边风大尤其注意保暖。</p>
+</div>
+
+<div class="section-title">&#x1F4CD; 双向奔赴</div>
 
 <div class="day-card blue">
   <div class="day-header">
@@ -203,40 +217,37 @@
   </div>
   <table style="width:100%;font-size:14px;border-collapse:collapse;">
     <tr>
-      <td style="padding:8px 0;width:60px;">&#x1F9CD;</td>
+      <td style="padding:8px 0;width:56px;">&#x1F9D1;</td>
       <td style="font-weight:600;">小尚</td>
       <td>齐齐哈尔南 &rarr; 沈阳北</td>
-      <td style="color:var(--muted);">高铁 3.5时 · &yen;365</td>
+      <td style="color:var(--muted);">高铁约 3.5h</td>
     </tr>
     <tr>
       <td style="padding:8px 0;">&#x1F9D1;&#x200D;&#x1F393;</td>
       <td style="font-weight:600;">小王</td>
       <td>深圳宝安 &rarr; 沈阳桃仙</td>
-      <td style="color:var(--muted);">直飞 4时 · &yen;800~1700</td>
+      <td style="color:var(--muted);">直飞约 4h</td>
     </tr>
   </table>
-  <p style="font-size:13px;color:var(--muted);margin-top:8px;">
-    &#x1F4A1; 小王建议 9.30 出发（机票更便宜！），如果不行 10.1 上午航班也 OK
-  </p>
 </div>
 
 <div class="divider">&#x2728; &#x2728; &#x2728;</div>
 
-<!-- Day 1 -->
-<div class="section-title">&#x1F5FA; 第二步：逐日行程</div>
+<!-- 行程 -->
+<div class="section-title">&#x1F5FA; 逐日行程</div>
 
+<!-- Day 1 -->
 <div class="day-card pink">
   <div class="day-header">
     <span class="day-label pink">Day 1</span>
-    <span class="day-date">9.30 或 10.1</span>
-    <span class="day-highlight">终于见面啦！&#x1F493;</span>
+    <span class="day-date">10.1 周四</span>
+    <span class="day-highlight">双向奔赴，沈阳汇合</span>
   </div>
   <ul class="timeline pink">
-    <li>&#x2708; 各自从齐齐哈尔 &amp; 深圳出发，下午抵达沈阳</li>
-    <li>&#x1F3E8; 中街附近酒店办入住，放行李</li>
-    <li>&#x1F969; <strong>西塔美食街</strong> &mdash; 韩式烤肉接风宴！整条街韩文招牌 + 烤肉滋滋响，一秒"穿越到首尔"</li>
-    <li>&#x1F36B; 饭后逛韩国超市买零食，去练歌房吼两嗓子也可以 &#x1F3A4;</li>
-    <li>&#x1F4A4; 早点休息，明天要早起逛早市！</li>
+    <li><span class="tag">&#x2708;</span>小王从深圳起飞，航班选上午到达，第一天下午就有完整半天</li>
+    <li><span class="tag">&#x1F684;</span>小尚从齐齐哈尔坐高铁南下，午后在沈阳汇合</li>
+    <li><span class="tag">&#x1F3E8;</span>汇合后直奔酒店放行李，住中街附近，出门就是步行街，去故宫和帅府都很近</li>
+    <li><span class="tag">&#x1F969;</span>晚上逛中街吃晚饭 &mdash; 锅包肉、烤串、鸡架，先来一顿硬菜热热身</li>
   </ul>
 </div>
 
@@ -244,153 +255,149 @@
 <div class="day-card coral">
   <div class="day-header">
     <span class="day-label coral">Day 2</span>
-    <span class="day-date">10.2</span>
-    <span class="day-highlight">&#x1F314; 早市烟火气 + 铭记历史日</span>
+    <span class="day-date">10.2 周五</span>
+    <span class="day-highlight">早市 + 故宫 + 西塔</span>
   </div>
   <ul class="timeline coral">
-    <li>&#x1F305; <strong>小河沿早市</strong>（必去！）&mdash; 豆腐脑、油炸糕、各种东北小吃，两个人 50 块吃到撑。东北大妈的"姑娘尝尝这个！"会让小王觉得超可爱 &#x1F60A;</li>
-    <li>&#x1F3DB; <strong>"九·一八"历史博物馆</strong> &mdash; 全国唯一全面反映九一八事变史的博物馆，铭记历史。免费，但需提前在官方渠道预约（凭身份证）</li>
-    <li>&#x1F356; 午饭：中街 <strong>老边饺子</strong> &mdash; 1829 年的非遗手艺，冰花饺子必点</li>
-    <li>&#x1F3A8; <strong>红梅文创园</strong> &mdash; 老味精厂改建，小众咖啡馆 + 独立书店 + 手作市集。运气好能碰上原料库 LIVEHOUSE 的乐队演出 &#x1F3B8;</li>
-    <li>&#x1F31C; <strong>彩塔夜市</strong> &mdash; 烤冷面、炒焖子、铁板鸡架、烤油边……一路逛吃一路走，大白梨汽水干杯 &#x1F964;</li>
+    <li><span class="tag">上午</span><strong>小河沿早市</strong>（约 1.5h）&mdash; 豆腐脑、油炸糕、米酒，几块钱吃到撑</li>
+    <li><span class="tag">上午</span><strong>沈阳故宫</strong>（约 2h）&mdash; 十一红墙拍照人多，建议早点到</li>
+    <li><span class="tag">下午</span><strong>张氏帅府</strong> &mdash; 大青楼、小青楼，旁边金融博物馆的地下金库很出片；和故宫步行可达</li>
+    <li><span class="tag">下午</span><strong>西塔风情街</strong> &mdash; 泥炉烤肉、烤活鳗鱼、打糕，不空腹来就对了</li>
+    <li><span class="tag">晚上</span><strong>老北市</strong> &mdash; 古风街区亮灯氛围拉满，飞天凤凰表演很震撼，逛完夜市吃串收尾</li>
   </ul>
 </div>
 
-<!-- Day 3 - 重头戏 -->
+<!-- Day 3 -->
 <div class="day-card amber">
   <div class="day-header">
     <span class="day-label amber">Day 3</span>
-    <span class="day-date">10.3</span>
-    <span class="day-highlight">&#x1F6FF; 北方搓澡初体验！这才是来东北的正经事</span>
+    <span class="day-date">10.3 周六</span>
+    <span class="day-highlight">逛文创，看教堂</span>
   </div>
   <ul class="timeline amber">
-    <li>&#x1F4A4; 睡到自然醒（早市逛完了，今天不用早起！）</li>
-    <li>&#x1F6CD; <strong>中街逛街</strong> &mdash; 东北最老商业街，各种潮牌奶茶店，吃 <strong>中街冰点</strong>（老字号雪糕）&#x1F366;</li>
-    <li>&#x1F6FF; <strong>沈阳洗浴中心</strong>（重点中的重点！）&mdash; 清河半岛或泡泡森林，泡汤 + 搓澡 + 汗蒸 + 自助餐 + 休息大厅躺平 + 书吧 + 电影院。人均 200-300，能在里面待一整个下午。小王可能会说"被人搓也太奇怪了吧"&rarr;搓完"我这辈子没这么干净过"&#x2728;</li>
-    <li>&#x1F969; <strong>泥炉烤肉</strong> &mdash; 从洗浴出来浑身松软，直奔老式泥炉烤肉。蘸料是麻酱 + 白糖 + 葱花香菜，全国独一份</li>
-    <li>&#x1F3AE; <strong>老北市</strong> &mdash; 饭后散步看古风灯光秀，免费！拍照好看 &#x1F4F8;</li>
+    <li><span class="tag">上午</span><strong>红梅文创园 + 1905 文创园</strong> &mdash; 红梅是老味精厂改造，巨型发酵罐当艺术装置，红砖厂房配咖啡厅特别出片；1905 更潮，手作店、艺术工作室、涂鸦墙</li>
+    <li><span class="tag">下午</span><strong>小南教堂</strong> &mdash; 哥特式外立面，拍照超出片</li>
+    <li><span class="tag">晚上</span><strong>彩电塔夜市</strong> &mdash; 烤串铁板鱿鱼人均 30 左右，本地年轻人扎堆。不想去的话，十二纬街菜市场更实惠，鸡架便宜一半</li>
   </ul>
 </div>
 
-<!-- Day 4 - 转移大连 -->
+<!-- Day 4 -->
 <div class="day-card green">
   <div class="day-header">
     <span class="day-label green">Day 4</span>
-    <span class="day-date">10.4</span>
-    <span class="day-highlight">&#x1F30A; 沈阳 &rarr; 大连，大海我们来啦！</span>
+    <span class="day-date">10.4 周日</span>
+    <span class="day-highlight">沈阳转大连</span>
   </div>
   <ul class="timeline green">
-    <li>&#x1F684; 睡到自然醒，沈阳站/沈阳北站出发，高铁 1.5-2.5 小时到大连（二等座 &yen;165-200）</li>
-    <li>&#x1F3E8; 入住大连酒店：推荐星海广场或中山广场附近（10.4 房价已回落 &#x1F389;）</li>
-    <li>&#x1F4CD; <strong>星海广场</strong> &mdash; 大连地标，喂海鸥 &#x1F9A2;（带面包！）</li>
-    <li>&#x1F309; <strong>跨海大桥</strong> &mdash; 傍晚看夕阳 + 大桥灯光</li>
-    <li>&#x1F364; 晚饭：<strong>喜鼎海胆水饺</strong> + <strong>正黄旗海鲜烧烤</strong>，第一顿大连海鲜必须到位！</li>
+    <li><span class="tag">上午</span><strong>九一八历史博物馆</strong> <span style="display:inline-block;font-size:11px;font-weight:600;color:#6b6b66;background:#efefea;padding:1px 7px;border-radius:9px;">可选</span> &mdash; 免费但要预约（周一闭馆、周日正常开），静心参观约 2h；不想去就睡到自然醒，多留点时间闲逛</li>
+    <li><span class="tag">午后</span>高铁去大连，最快 1 小时 26 分（沈阳站 / 沈阳南 &rarr; 大连北），十一提前买票</li>
+    <li><span class="tag">晚上</span>入住中山广场或星海广场附近，交通便利看海也方便</li>
+    <li><span class="tag">晚上</span><strong>星海广场</strong> &mdash; 吹海风、看跨海大桥夜景灯光秀</li>
   </ul>
 </div>
 
-<!-- Day 5 - 大连精华 -->
+<!-- Day 5 -->
 <div class="day-card blue">
   <div class="day-header">
     <span class="day-label blue">Day 5</span>
-    <span class="day-date">10.5</span>
-    <span class="day-highlight">&#x1F4F8; 最出片的一天！海岛风 + 浪漫夜景</span>
+    <span class="day-date">10.5 周一</span>
+    <span class="day-highlight">一路看海</span>
   </div>
   <ul class="timeline blue">
-    <li>&#x1F4CD; <strong>棒棰岛</strong> &mdash; 三面环海一面靠山，情侣合照绝佳地！下午 4-5 点光线最柔和，随便拍都是杂志封面 &#x1F4F8;</li>
-    <li>&#x1F6A2; <strong>渔人码头</strong> &mdash; 彩色房子 + 渔船，北欧风情。中午吃码头边的海鲜大排档</li>
-    <li>&#x1F30A; <strong>滨海路木栈道</strong> &mdash; 从付家庄走到燕窝岭，海风吹着，两个人慢慢走 &#x1F491;</li>
-    <li>&#x1F31C; <strong>东港威尼斯水城夜游</strong> &mdash; 灯光 + 水面，白天人多？晚上人散了，而且比白天好看 100 倍！</li>
+    <li><span class="tag">上午</span><strong>莲花山公园</strong> &mdash; 北门进去梅花鹿超多又亲人，山顶是跨海大桥最佳观景点；索道从北门到南门，下来沿亲水栈道到银沙滩</li>
+    <li><span class="tag">下午</span><strong>滨海路徒步 &rarr; 渔人码头</strong> &mdash; 挑视野好的观景台走一段就行，不用走全程；渔人码头彩色渔船 + 欧式建筑，像在童话小镇散步</li>
+    <li><span class="tag">晚上</span><strong>东港音乐喷泉 + 威尼斯水城</strong> &mdash; 欧式建筑亮灯很浪漫，坐贡多拉小船拍照有氛围</li>
   </ul>
 </div>
 
-<!-- Day 6 - 收官 -->
-<div class="day-card pink">
+<!-- Day 6 -->
+<div class="day-card purple">
   <div class="day-header">
-    <span class="day-label pink">Day 6</span>
-    <span class="day-date">10.6</span>
-    <span class="day-highlight">&#x1F44B; 最后一站 + 各回各家</span>
+    <span class="day-label purple">Day 6</span>
+    <span class="day-date">10.6 周二</span>
+    <span class="day-highlight">旅顺逛一天</span>
   </div>
-  <ul class="timeline pink">
-    <li>&#x1F30B; 上午：<strong>金石滩地质公园</strong>看海蚀地貌，或者 <strong>旅顺</strong>半日游看军港（二选一）</li>
-    <li>&#x1F990; 中午：最后一顿大连海鲜，道别餐！</li>
-    <li>&#x1F684; 小尚：大连 &rarr; 沈阳北 &rarr; 齐齐哈尔南（高铁全程约 6h）</li>
-    <li>&#x2708; 小王：大连周水子机场直飞深圳（约 3.5h，10.6 返程票价已回落）</li>
+  <ul class="timeline purple">
+    <li><span class="tag">白天</span>地铁 12 号线去旅顺，留一天不赶场 &mdash; <strong>太阳沟</strong>（红砖建筑 + 树荫）&rarr; <strong>白玉山</strong>（俯瞰港湾全景）&rarr; <strong>军港公园</strong> &rarr; <strong>旅顺博物馆</strong></li>
+    <li><span class="tag">傍晚</span>回市区，<strong>黑石礁公园</strong>看礁石和潮水</li>
+    <li><span class="tag">晚上</span><strong>交大夜市</strong> &mdash; 本地人不推荐西安路夜市，交大夜市开在大学旁，好吃又便宜，闭眼选</li>
+  </ul>
+</div>
+
+<!-- Day 7 -->
+<div class="day-card teal">
+  <div class="day-header">
+    <span class="day-label teal">Day 7</span>
+    <span class="day-date">10.7 周三</span>
+    <span class="day-highlight">买伴手礼，各自回家</span>
+  </div>
+  <ul class="timeline teal">
+    <li><span class="tag">上午</span>慢逛 citywalk &mdash; <strong>中山广场</strong>看老建筑 &rarr; <strong>大连商场</strong>买伴手礼，熏肉大饼和焖子是本地特色</li>
+    <li><span class="tag">上午</span>住星海广场附近的话，再去喂一波海鸥</li>
+    <li><span class="tag">下午</span>各自返程 &mdash; 小王从大连飞深圳，小尚从大连经沈阳回齐齐哈尔</li>
   </ul>
 </div>
 
 <div class="divider">&#x1F4B0; &#x1F4B0; &#x1F4B0;</div>
 
-<!-- 费用估算 -->
-<div class="section-title">&#x1F4B0; 第三步：预算参考（两人合计）</div>
+<!-- 预算参考 -->
+<div class="section-title">&#x1F4B0; 预算参考（两人合计）</div>
 
 <div class="day-card amber">
   <table style="width:100%;font-size:14px;border-collapse:collapse;">
     <tr>
-      <td style="padding:5px 0;">&#x2708; 小王往返机票</td>
-      <td style="text-align:right;font-weight:600;">&yen;3,000 &ndash; 4,000</td>
+      <td style="padding:5px 0;">&#x2708; 小王机票（深圳 &rarr; 沈阳 + 大连 &rarr; 深圳）</td>
+      <td style="text-align:right;font-weight:600;">&yen;2,500 &ndash; 4,000</td>
     </tr>
     <tr>
-      <td style="padding:5px 0;">&#x1F684; 小尚往返高铁</td>
-      <td style="text-align:right;font-weight:600;">&yen;750</td>
+      <td style="padding:5px 0;">&#x1F684; 小尚高铁（齐齐哈尔 &rarr; 沈阳 &rarr; 大连，原路返）</td>
+      <td style="text-align:right;font-weight:600;">&yen;1,100 &ndash; 1,200</td>
     </tr>
     <tr>
-      <td style="padding:5px 0;">&#x1F684; 沈阳 &rarr; 大连高铁 &times;2</td>
-      <td style="text-align:right;font-weight:600;">&yen;350 &times; 2</td>
+      <td style="padding:5px 0;">&#x1F684; 小王 沈阳 &rarr; 大连高铁</td>
+      <td style="text-align:right;font-weight:600;">&yen;165 &ndash; 200</td>
     </tr>
     <tr>
-      <td style="padding:5px 0;">&#x1F3E8; 酒店 5 晚</td>
-      <td style="text-align:right;font-weight:600;">&yen;2,000 &ndash; 3,000</td>
+      <td style="padding:5px 0;">&#x1F3E8; 酒店 6 晚</td>
+      <td style="text-align:right;font-weight:600;">&yen;2,200 &ndash; 3,500</td>
     </tr>
     <tr>
-      <td style="padding:5px 0;">&#x1F372; 吃（满吃模式！）</td>
-      <td style="text-align:right;font-weight:600;">&yen;1,500 &ndash; 2,000</td>
+      <td style="padding:5px 0;">&#x1F372; 餐饮 7 天（两人）</td>
+      <td style="text-align:right;font-weight:600;">&yen;1,800 &ndash; 3,000</td>
     </tr>
     <tr>
-      <td style="padding:5px 0;">&#x1F3AB; 景区门票</td>
-      <td style="text-align:right;font-weight:600;">&yen;500</td>
+      <td style="padding:5px 0;">&#x1F3AB; 门票（两人）</td>
+      <td style="text-align:right;font-weight:600;">&yen;600 &ndash; 1,000</td>
     </tr>
     <tr style="border-top:1px solid #eee;">
       <td style="padding:8px 0;font-weight:700;">&#x1F4B0; 合计</td>
-      <td style="text-align:right;font-weight:700;font-size:16px;">&yen;8,000 &ndash; 11,000</td>
+      <td style="text-align:right;font-weight:700;font-size:16px;">&yen;8,400 &ndash; 12,900</td>
     </tr>
   </table>
+  <p style="font-size:12px;color:var(--muted);margin-top:10px;">参考区间，丰俭由人。</p>
 </div>
 
-<!-- 温馨提示 -->
-<div class="section-title">&#x26A0; 第四步：重要提醒</div>
+<!-- 实用提醒 -->
+<div class="section-title">&#x26A0; 实用提醒</div>
 
 <div class="tip-box">
-  <p><strong>&#x2708; 机票趁早买！</strong> 小王 10.1 机票 1700+，10.2 就掉到 1160。能 9.30 出发最好，价格更低还能多赚一天沈阳</p>
+  <p><strong>&#x1F3AB; 抢票：</strong>沈阳故宫提前 5 天放票，十一前三天秒没，定好闹钟；高铁提前 15 天开售，热门时段尽早抢。</p>
 </div>
 <div class="tip-box">
-  <p><strong>&#x1F3E8; 酒店提前 2 周订！</strong> 沈阳不难订，大连 10.4 起订（别订 10.1-3 的，又满又贵）</p>
+  <p><strong>&#x1F9E5; 穿搭：</strong>深圳短袖，沈阳/大连 5-16&deg;C，下飞机温差巨大。薄羽绒/冲锋衣必带，海边风大体感更低。</p>
 </div>
 <div class="tip-box">
-  <p><strong>&#x1F372; 东北菜量巨大！</strong> 两个人点菜悠着点，3 个菜基本顶饱。别点太多，吃不完会被阿姨说"这俩孩子咋不会过日子呢" &#x1F605;</p>
+  <p><strong>&#x1F687; 交通：</strong>沈阳市区景点集中，地铁 + 步行足够；大连打车难叫，地铁 + 共享电动车更靠谱。</p>
 </div>
 <div class="tip-box">
-  <p><strong>&#x1F4F1; 下载 APP：</strong> 沈阳"盛京通"坐地铁，大连"大连地铁 e 出行"，网约车比黑车靠谱</p>
-</div>
-<div class="tip-box">
-  <p><strong>&#x1F9A0; 肠胃药必备！</strong> 海鲜 + 冰啤酒 = 深圳肠胃不一定顶得住。带好藿香正气水和蒙脱石散，有备无患</p>
-</div>
-<div class="tip-box">
-  <p><strong>&#x1F6FF; 洗浴带什么：</strong> 沈阳洗浴中心基本啥都提供（浴衣、毛巾、洗漱用品），带颗期待的心就行。搓澡加醋或牛奶可以自己选，别害羞，阿姨什么世面没见过 &#x1F61C;</p>
+  <p><strong>&#x1F372; 美食：</strong>沈阳鸡架随便吃，西塔韩料别空腹；大连海鲜别在景区大排档吃，去黑石礁市场买鲜活、找小店加工更实惠。</p>
 </div>
 
 <!-- 结尾 -->
 <div class="signoff">
-  <p class="big">&#x1F48C;</p>
-  <p>此致</p>
-  <p><strong>十一旅行计划 · 待审批版</strong></p>
-  <p style="margin-top:8px;">制定人：你的专属旅行规划师</p>
-  <p style="color:#ccc;font-size:12px;margin-top:4px;">（也就是小尚啦）</p>
-  <p style="margin-top:16px;font-size:13px;">
-    请领导<span style="font-size:18px;">&#x1F449;</span>
-    <strong style="font-size:16px;color:#c44a62;">审批 / 修改 / 补充意见</strong>
-    <span style="font-size:18px;">&#x1F448;</span>
-  </p>
-  <p style="margin-top:8px;font-size:18px;">&#x1F495;</p>
+  <p class="big">&#x1F341;</p>
+  <p>十一快乐，一路顺利</p>
+  <p style="margin-top:8px;font-size:13px;">—— 沈阳 &#215; 大连 · 七日</p>
 </div>
 
 </div>
